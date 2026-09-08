@@ -1,0 +1,79 @@
+[
+  {
+    "ar": "الأطباق الرئيسية",
+    "en": "Main Courses",
+    "id": "0",
+    "items": [
+      {
+        "id": "0-0",
+        "ar": "وجبة انتركوت الفرنسية",
+        "en": "French Entrecote Meal",
+        "price": 171.0,
+        "available": true
+      },
+      {
+        "id": "0-1",
+        "ar": "لحم بوتين",
+        "en": "Beef Poutine",
+        "price": 45.0,
+        "available": true
+      },
+      {
+        "id": "0-2",
+        "ar": "سالمون صلصة سلمون بالزبدة",
+        "en": "Salmon Lemon Butter Sauce",
+        "price": 102.0,
+        "available": true
+      }
+    ]
+  },
+  {
+    "ar": "الطلبات الجانبية",
+    "en": "Side Orders",
+    "id": "1",
+    "items": [
+      {
+        "id": "1-0",
+        "ar": "المشروبات الغازية",
+        "en": "Soft Drinks",
+        "price": 12.0,
+        "available": true
+      },
+      {
+        "id": "1-1",
+        "ar": "سلطة الجوز",
+        "en": "Walnut Salad",
+        "price": 12.0,
+        "available": true
+      }
+    ]
+  },
+  {
+    "ar": "حلويات",
+    "en": "Desserts",
+    "id": "2",
+    "items": [
+      {
+        "id": "2-0",
+        "ar": "كريم بروليه",
+        "en": "Creme Brulee",
+        "price": 29.0,
+        "available": true
+      },
+      {
+        "id": "2-1",
+        "ar": "موس الشوكولاتة",
+        "en": "Chocolate Mousse",
+        "price": 29.0,
+        "available": true
+      },
+      {
+        "id": "2-2",
+        "ar": "تراميسو",
+        "en": "Tiramisu",
+        "price": 29.0,
+        "available": true
+      }
+    ]
+  }
+]
