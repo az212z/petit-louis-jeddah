@@ -28,3 +28,7 @@ Repository inventory checked against 891 repositories on az212z, 8 September 202
   Source: https://hungerstation.com/sa-ar/restaurant/entercote/jeddah/an-naim/23261
 
 Actual restaurant images; brand and photo rights remain with their owners. Reuse license not independently verified. No claim of official restaurant ownership or endorsement. Self-hosted fonts have SIL OFL licenses in public/fonts.
+
+## WhatsApp contact button
+
+The floating WhatsApp link uses the restaurant’s published telephone number in international digits-only format, separately from the designer credit. La Gioia explicitly publishes this as WhatsApp in its official iWaiter data. WhatsApp registration of the other published numbers has not been independently confirmed; a valid click-to-chat URL does not establish an active WhatsApp account. Existing phone and Instagram options remain available.

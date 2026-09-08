@@ -1,9 +1,9 @@
 /* oxlint-disable next/no-img-element -- Restaurant photos are optimized WebP assets for static hosting. */
-import { ArrowDownLeft, ArrowUpLeft, Camera, MapPin, Phone } from 'lucide-react';
+import { ArrowDownLeft, ArrowUpLeft, Camera, MapPin, MessageCircle, Phone } from 'lucide-react';
 import Menu from '@/components/menu';
 import data from '@/data/restaurant.json';
 export default function Home() {
- const r=data;const call=r.phone ? `tel:${r.phone}` : r.waitingListUrl;
+ const r=data;const whatsapp=`https://wa.me/${r.phone.replace(/\D/g, '')}`;const call=r.phone ? `tel:${r.phone}` : r.waitingListUrl;
  return <div className={`restaurant style-${r.style}`}>
  <a className="skip-link" href="#main">انتقل إلى المحتوى</a>
  <header className="header"><a className="wordmark" href="#home" aria-label={`${r.nameAr} — الرئيسية`}><span className="brand-name">{r.nameEn}</span><span>{r.cityEn}</span></a><nav aria-label="التنقل الرئيسي"><a href="#story">المطعم</a><a href="#menu">المنيو</a><a href="#visit">التواصل</a></nav><a className="header-contact" href={call}>تواصل معنا <ArrowUpLeft size={17}/></a></header>
@@ -15,5 +15,6 @@ export default function Home() {
  <section className="visit section" id="visit"><div className="section-heading"><div><p className="eyebrow">YOUR NEXT TABLE</p><h2>{r.visitTitle}</h2></div><a className="text-link" href={call}><Phone size={18}/><span dir="ltr">{r.phoneDisplay || r.handle}</span></a></div><div className="visit-grid"><div className="address-block"><p className="eyebrow">{r.cityEn.toUpperCase()}</p><h3>{r.nameAr}</h3><p>{r.addressAr}</p><a className="text-link" href={r.mapsUrl} target="_blank" rel="noreferrer"><MapPin size={18}/> افتح الاتجاهات <ArrowUpLeft size={18}/></a></div><div className="visit-aside"><p>للحجز والاستفسار عن أوقات العمل، تواصل مع المطعم.</p><a className="button" href={call}>{r.phone ? 'اتصل بالمطعم' : 'تواصل مع المطعم'} <ArrowUpLeft size={20}/></a></div></div></section>
  <section className="social-section"><div><p className="eyebrow">STAY IN THE PICTURE</p><h2>تابع {r.nameAr}.</h2></div><a href={r.instagram} target="_blank" rel="noreferrer" className="social-handle"><Camera size={25}/><span>{r.handle}</span><ArrowUpLeft size={25}/></a><p>الأطباق واللحظات الجديدة<br/>على حساب المطعم في إنستغرام.</p></section></main>
  <footer><div className="footer-top"><a className="footer-name" href="#home">{r.nameEn}</a><div><a href="#menu">المنيو</a><a href="#visit">الموقع والتواصل</a><a href={r.instagram} target="_blank" rel="noreferrer">إنستغرام</a></div></div><div className="footer-bottom"><a className="designer-credit" href="https://wa.me/966562571234" target="_blank" rel="noreferrer" lang="en" dir="ltr">Designed by Ali</a></div></footer>
+ <a className="whatsapp-contact" href={whatsapp} target="_blank" rel="noopener noreferrer" aria-label={`تواصل مع ${r.nameAr} عبر واتساب`}><MessageCircle size={23} aria-hidden="true"/><span>واتساب</span></a>
  </div>;
 }
